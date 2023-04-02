@@ -3,7 +3,7 @@ name: Create Pull Request
 on:
   push:
     branches:
-      - main
+      - development
 
 jobs:
   updateAuthor:
@@ -24,7 +24,7 @@ jobs:
         run: echo ${{ env.GIT_COMMIT_AUTHOR_NAME }} > AUTHOR
 
       - name: Raise PR
-        uses: peter-evans/create-pull-request@v4
+        uses:  diillson/auto-pull-request@v1.0.1
         with:
           base: main
           title: "demo for auto pr"
