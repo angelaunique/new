@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-    - jkhlug.
+    - development
 
 jobs:
   pull-request:
