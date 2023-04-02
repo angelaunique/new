@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-    - development
+    - trigger
 
 jobs:
   pull-request:
